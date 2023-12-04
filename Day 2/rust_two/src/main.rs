@@ -20,7 +20,8 @@ const MAX_RED_CUBES: u32 = 12;
 
 fn main() {
     if let Ok(lines) = read_lines(INPUT_FILE) {
-        let mut result = 0;
+        let mut result_part_one = 0;
+        let mut result_part_two = 0;
         for line in lines {
             if let Ok(current_line) = line {
                 let mut game_id = 0;
@@ -66,11 +67,16 @@ fn main() {
                     && green_cubes_highest_amount <= MAX_GREEN_CUBES
                     && red_cubes_highest_amount <= MAX_RED_CUBES
                 {
-                    result += game_id;
+                    result_part_one += game_id;
                 }
+
+                result_part_two += blue_cubes_highest_amount
+                    * green_cubes_highest_amount
+                    * red_cubes_highest_amount;
             }
         }
-        println!("{}", result);
+        println!("{}", result_part_one);
+        println!("{}", result_part_two);
     }
 }
 
