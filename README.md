@@ -8,7 +8,7 @@ Day 1, Part 1: 53974 (Rust, C#)
 <br>
 Day 1, Part 2: 52840 (Rust, C#)
 <br>
-Day 2, Part 1: 2149 (Rust)
+Day 2, Part 1: 2149 (Rust, C#)
 <br>
-Day 2, Part 2: 71274 (Rust)
+Day 2, Part 2: 71274 (Rust, C#)
 </details>
